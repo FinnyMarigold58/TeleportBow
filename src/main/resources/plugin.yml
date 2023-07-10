@@ -8,8 +8,10 @@ commands:
   givebow:
     usage: /givebow
     description: "Give a bow"
-    # permission: "tpbow.give"
-# permissions:
-#   tpbow.give:
-#     default: false
-#     description: Allows the use of /givebow
+    permission: "tpbow.give"
+    permission-message: You do not have access to this command.
+
+permissions:
+  tpbow.give:
+    default: op
+    description: Allows the use of /givebow

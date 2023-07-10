@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
+import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -23,6 +24,8 @@ public class BowUtils {
         lore.add(Component.text("and teleport anywhere."));
         bowMeta.lore(lore);
         bowMeta.addEnchant(Enchantment.ARROW_INFINITE, 1, false);
+        bowMeta.setUnbreakable(true);
+        bowMeta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
         bow.setItemMeta(bowMeta);
 
         return bow;
