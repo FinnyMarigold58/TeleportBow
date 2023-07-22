@@ -11,10 +11,10 @@ public class TeleportBow extends JavaPlugin {
     public final Logger logger = getLogger();
 
     @Override
-    public void onEnable(){
+    public void onEnable() {
         logger.info("HISHdiashdioashdoas");
 
-        getCommand("givebow").setExecutor(new GiveCommand());  
+        getCommand("givebow").setExecutor(new GiveCommand());
         getServer().getPluginManager().registerEvents(new BowListener(), this);
     }
 }

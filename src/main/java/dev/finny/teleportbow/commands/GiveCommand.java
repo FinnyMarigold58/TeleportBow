@@ -13,10 +13,10 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
 
 public class GiveCommand implements CommandExecutor {
-    
+
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        
+
         if (sender instanceof Player p) {
             if (args.length == 0) {
                 ItemStack bow = BowUtils.createTeleportBow();

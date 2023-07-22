@@ -14,8 +14,8 @@ import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 
 public class BowUtils {
-    public static ItemStack createTeleportBow(){
-        
+    public static ItemStack createTeleportBow() {
+
         ItemStack bow = new ItemStack(Material.BOW, 1);
         ItemMeta bowMeta = bow.getItemMeta();
         bowMeta.displayName(Component.text("Teleport Bow", TextColor.color(0, 255, 0), TextDecoration.BOLD));
